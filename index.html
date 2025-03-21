@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home-screen">
+            <h1>Trivia Quiz App</h1>
+            <div class="topic-selection">
+                <h2>Select a Topic</h2>
+                <div class="topics">
+                    <button class="topic-btn" data-category="9">General Knowledge</button>
+                    <button class="topic-btn" data-category="17">Science & Nature</button>
+                    <button class="topic-btn" data-category="21">Sports</button>
+                    <button class="topic-btn" data-category="22">Geography</button>
+                    <button class="topic-btn" data-category="23">History</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="hide">
+            <div class="quiz-header">
+                <h2 id="question-text">Question goes here...</h2>
+                <div id="timer">
+                    <span id="time-remaining">15</span> seconds
+                </div>
+            </div>
+
+            <div id="answers-container">
+                <!-- Answers will be added here from JavaScript -->
+            </div>
+
+            <div class="quiz-footer">
+                <span id="question-number">Question 1 of 10</span>
+            </div>
+        </div>
+
+        <div id="results-screen" class="hide">
+            <h2>Quiz Completed!</h2>
+            <div id="score-display">
+                <p>Your score: <span id="final-score">0</span>/10</p>
+            </div>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
